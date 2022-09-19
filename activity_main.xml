@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#69D0FF">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BBEAFF"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/text_view_big_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="Which Service Do You Need?"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        // CardView for Cleaning ❤️
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_Cleaning"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_big_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/istockphoto_590277932_612x612" />
+
+                <TextView
+                    android:id="@+id/text_view_cleaning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/Cleaning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        // CardView for Plumber ❤️
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_plumber"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_Cleaning"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/service_heater" />
+
+                <TextView
+                    android:id="@+id/text_view_plumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/Plumber"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        // CardView for Beauty ❤️
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_beauty"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_plumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/screen_shot_2022_09_17_at_10_10_24_am" />
+
+                <TextView
+                    android:id="@+id/text_view_beauty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/Beauty"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
